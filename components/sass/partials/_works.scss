@@ -1,0 +1,120 @@
+.works{
+	padding-top: 40px;
+	padding-bottom: 80px;
+	.title{
+		font-family: $primary-font;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+		position: relative;
+		color: $blue;
+		&::before{
+			content: '';
+			background-color: $blue;
+			height: 3px;
+			width: 55px;
+			position: absolute;
+			bottom: -2px;
+			left: 3px;
+		}
+	}
+	#works-list{
+		margin-top: 50px;
+		.photo{
+			position: relative;
+			cursor: pointer;
+			height: 200px;
+			max-width: 31.333333%;
+			margin-right: 10px;
+			padding: 0;
+			&:hover .img-caption{
+				opacity: 1;
+			}
+			.img-thumbnail{
+				position: absolute;
+				height: 100%;
+				width: 100%;
+			}
+			.img-caption{
+				position: absolute;
+				background-color: #353f47;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				border-radius: 2px;
+				transition: opacity 0.9s;
+				text-align: center;
+				.name{
+					color: $secondary-color;
+					font-size: 1.2rem;
+					margin-top: 60px;
+					letter-spacing: 1px;
+					font-weight: 100;
+				}
+				.btns{
+					@include center-content();
+					// height: 30px;
+					width: 80%;
+					// border: 1px solid #eee;
+					margin-top: 45px;
+					&:hover .btn-github{
+						border-right-color: $blue;
+					}
+					&:hover .btn-demo{
+						border-left-color: $blue;
+					}
+					.btn{
+						color: $secondary-color;
+						border: 1px solid #eee;
+						font-weight: 100;
+						width: 130px;
+						border-radius: 0;
+						transition: color 0.5s, border-color 0.5s;
+						&:hover{
+							color: $blue;
+							border-color: $blue;
+						}
+					}
+				}
+				.btn-demo{
+					margin-left: -5px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+	.works{
+		.title{
+			font-size: 1.5rem;
+		}
+		#works-list{
+			.photo{
+				max-width: 100%;
+				margin-right: 0;
+				.img-caption{
+					// width: 89%;
+					// height: 100%;
+					.name{
+						font-size: 1.1rem;
+						margin-top: 40px;
+					}
+					.btns{
+						width: 100%;
+						margin-top: 45px;
+						.btn{
+							width: 100px;
+							padding: .3rem 0rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

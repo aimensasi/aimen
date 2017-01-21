@@ -1,0 +1,44 @@
+{"works" : [
+{
+	"name": "Bitly-Salted",
+	"desc": "Bitly-Salted is a url shortener app. This app was inspired by the popular app Bilty.",
+	"img_name": "bitly.jpeg",
+	"github": "https://github.com/aimensasi/bitly-salted",
+	"demo": "https://bitly-salted.herokuapp.com/"
+},
+{
+	"name": "Dynos-Cream",
+	"desc": "Dynos-Cream is school finder app to help parents find schools for thier children.",
+	"img_name": "Dynos.jpeg",
+	"github": "https://github.com/aimensasi/Dynos",
+	"demo": "https://dynos-cream.herokuapp.com/"
+},
+{
+	"name": "Landio-Salted",
+	"desc": "Land.io-Salted is a web landing page designed by Peter Finlan.",
+	"img_name": "Landio.jpeg",
+	"github": "https://github.com/aimensasi/land",
+	"demo": "http://land.io.s3-website-ap-southeast-1.amazonaws.com/"
+},
+{
+	"name": "Blueasy-Salted",
+	"desc": "Blueasy-Salted is a website template ideal for agencies and portfolios. Designed by Djordje Vanjek.",
+	"img_name": "blueasy.jpeg",
+	"github": "https://github.com/aimensasi/blueasy-salted",
+	"demo": "http://blueasy-salted.s3-website-ap-southeast-1.amazonaws.com"
+},
+{
+	"name": "Tajam-Salted",
+	"desc": "Tajam-Salted is a one-page design template for agencies. This freebie includes a clean landing page made of sections (about, team, works, etc). This page was design by by Aji Darmawan.",
+	"img_name": "Tajam.jpeg",
+	"github": "https://github.com/aimensasi/tajam-salted",
+	"demo": "http://tajam-salted.s3-website-ap-southeast-1.amazonaws.com/"
+},
+{
+	"name": "Elipsis-Salted",
+	"desc": "Elipsis-Salted is a minimal and elegant website template to build your portfolio. Designed by HeyDesign Magazine.",
+	"img_name": "Design_lab.jpeg",
+	"github": "https://github.com/aimensasi/LabDesign",
+	"demo": "http://designlab-salted.s3-website-ap-southeast-1.amazonaws.com/"
+}
+]}

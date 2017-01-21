@@ -1,4 +1,3 @@
-
 var gulp = require('gulp'),
     gUtil = require('gulp-util'),
     concat = require('gulp-concat'),
@@ -37,11 +36,11 @@ if(env === 'developments'){
     outputStyle = 'config.rb';
 }
 
-jsSrc = 'components/script/*.js';
+jsSrc = 'components/scripts/*.js';
 sassStyleSrc = 'components/sass/style.scss';
 allSassSrc = 'components/sass/**/*.scss';
 htmlsrc = 'builds/developments/*.html'
-imgSrc = 'builds/developments/images/*/*.*';
+imgSrc = 'builds/developments/images/**/*.*';
 
 gulp.task('compass', function(){
     console.log(outputStyle);
@@ -117,6 +116,3 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('default', ['html', 'js', 'json', 'compass', 'browser-sync', 'images', 'watch']);
-
-  # aimen
-  Site Url: 

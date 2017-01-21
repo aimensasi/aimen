@@ -1,0 +1,42 @@
+.about-me{
+	@include imageCover('../images/pic.png', 400px);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: $secondary-color;
+	.title{
+		font-family: $primary-font;
+		font-weight: 100;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+		position: relative;
+		margin-top: 30px;
+		color: $secondary-color;
+		&::before{
+			content: '';
+			background-color: $secondary-color;
+			height: 3px;
+			width: 105px;
+			position: absolute;
+			bottom: -5px;
+			left: 0px;
+		}
+	}
+	.leads{
+		font-size: 1.2rem;
+		font-weight: 100;
+	}
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+	.about-me{
+		.title{
+			font-size: 1.5rem;
+		}
+		.leads{
+			font-size: 1.1rem;
+		}
+	}
+}

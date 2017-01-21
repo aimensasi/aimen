@@ -1,0 +1,84 @@
+.footer{
+	// @include imageCover(#353f47, 200px);
+	background-color: #353f47;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #fff;
+	.rights{
+		margin-right: auto;
+		margin-top: auto;
+		.title{
+			font-size: 1.1rem;
+	    padding-top: 70px;
+	    font-weight: 200;
+	    i{
+	    	color: #c9302c;
+	    }
+	    span{
+	    	font-family: 'black', sans-serif;
+	    	font-size: 18px;
+	    }
+		}
+	}
+	.contacts{
+		.title{
+			font-size: 1.3rem;
+			text-align: center;
+			font-weight: 100;
+			letter-spacing: 3px;
+		}
+		.social{
+			text-align: center;
+			margin-top: 30px;
+			.icon{
+				color: #eee;
+				font-size: 20px;
+				margin-right: 20px;
+				margin-left: 20px;
+				border: 1px solid #eee;
+				padding: 6px 11px 6px 18px;
+				transition: color 0.5s, border-color 0.5s;
+				&:hover{
+					color: $blue;
+					border-color: $blue;
+				}
+			}
+			.icon.icon-in{
+				padding-right: 14px;
+			}
+		}
+	}
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+	.footer{
+		// padding-top: 20px;
+		.rights{
+			.title{
+				font-size: 0.9rem;
+				padding-top: 0;
+				line-height: 1.5;
+		    span{
+		    	font-size: 18px;
+		    }
+			}
+		}
+		.contacts{
+			.title{
+				font-size: 1.1rem;
+				margin-top: 30px;
+			}
+			.social{
+				.icon-em{
+					margin-right: 0;
+				}
+				.icon-fb{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
